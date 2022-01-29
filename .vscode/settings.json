@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.csv": "php",
+        "unistd.h": "c"
+    }
+}

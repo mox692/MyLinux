@@ -12,9 +12,10 @@
         "--cap-add=SYS_PTRACE",
         "--security-opt",
         "seccomp=unconfined",
+        "--name=go118"
         // "--volume=/Users/kimuramotoyuki/MyLinux/go1.18/workdir/mox692:/go/src/github.com/mox692",
         // "--workdir=/go/src/github.com/mox692/",
     ],
-    "workspaceFolder": "/go/src/github.com/mox692/",
-    "workspaceMount": "source=${localWorkspaceFolder}/workdir,target=/go/src/github.com/mox692/,type=bind",
+    "workspaceFolder": "/go/src/github.com/mox692/memgo-private/",
+    "workspaceMount": "source=${localWorkspaceFolder}/workdir/memgo-private,target=/go/src/github.com/mox692/memgo-private,type=bind",
 }

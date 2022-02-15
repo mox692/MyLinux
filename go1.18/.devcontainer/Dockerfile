@@ -7,6 +7,6 @@ RUN ./make.bash
 
 ENV PATH "/master/go/bin:${PATH}"
 RUN echo "PATH=${PATH}" >> /etc/bash.bashrc && echo "${PATH}"
-WORKDIR /go/src/github.com/mox692/
+WORKDIR /go/src/github.com/mox692/memgo-private
 
 RUN go install golang.org/x/tools/gopls@latest

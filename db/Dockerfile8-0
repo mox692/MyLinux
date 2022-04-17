@@ -1,0 +1,12 @@
+
+FROM mysql:8.0
+
+ENV MYSQL_ROOT_PASSWORD rootpass
+ENV MYSQL_DATABASE test
+ENV MYSQL_USER testuser
+ENV MYSQL_PASSWORD testpass
+
+COPY world.sql.gz /docker-entrypoint-initdb.d/world.sql.gz
+COPY postcodeinit.sql /docker-entrypoint-initdb.d/postcodeinit.sql
+COPY postcodedata.sql /docker-entrypoint-initdb.d/postcodedata.sql
+COPY ./config/my.conf /etc/mysql/conf.d/my.cnf

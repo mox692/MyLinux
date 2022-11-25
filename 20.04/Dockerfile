@@ -11,9 +11,9 @@ FROM ubuntu:latest
 RUN apt -y update && apt -y full-upgrade && \
     apt -y install ca-certificates && \
     apt -y install --no-install-recommends \
-    build-essential file strace ltrace socat radare2 \
+    build-essential file strace ltrace socat \
     python3 python3-pip python3-dev libssl-dev libffi-dev \
-    zsh vim git curl python wget less sudo netcat telnet && \
+    zsh vim git curl wget less sudo netcat telnet && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 

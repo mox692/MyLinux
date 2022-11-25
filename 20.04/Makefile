@@ -6,7 +6,7 @@ build:
 
 .PHONY: up
 up:
-	docker run --name motoyuki_linux_20_04 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" -v $(CWD)/workdir:/root -it my_linux_20_04 bash
+	docker run --detach  --name motoyuki_linux_20_04 --cap-add=SYS_PTRACE --security-opt="seccomp=unconfined" -v $(CWD)/workdir:/root -it my_linux_20_04 bash
 
 .PHONY: down
 down:
